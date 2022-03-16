@@ -218,3 +218,4 @@ class SaveASGeojson:
                 featurecollection=exporter.exportFeatures(features)
                 #write feature attributes
                 output_file.write(featurecollection)
+            self.iface.messageBar().pushMessage("Success", "Output file written at " + filename, level=Qgis.Success, duration=3)
